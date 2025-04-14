@@ -73,7 +73,7 @@ Não rejeitar H₀ **não significa que H₀ é verdadeira** — apenas que, com
 - Teste de homogeneidade de variâncias (Levene)
 - Teste t bilateral para duas amostras independentes
 
-  ![code3](printcode/code1.png)
+  ![code3](printcode/code.png)
 
 ## Resultados
 
