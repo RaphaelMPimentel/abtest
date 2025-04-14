@@ -25,8 +25,23 @@ Investigar se a implementação de um preenchimento automático dos dados de car
 
 ### 2. Análise Exploratória (EDA)
 - Distribuição dos usuários por grupo experimental.
+  
+![code1](printcode/1.png)
 - Análise gráfica da dispersão do gasto (`spent`) por grupo.
+
+  ![code2](printcode/2.png)
 - Cálculo de estatísticas descritivas para `spent` e `purchases`.
+
+|        | uid             | spent          | purchases      |
+|----------------|------------------|----------------|----------------|
+| count          | 9.009            | 9009.000       | 9009.000       | 
+| mean           | 55.722.870       | 1902.86        | 4.58           |
+| min            | 11.143.140       | 99.00          | 1.00           |
+| 25%            | 33.428.110       | 897.00         | 2.00           |
+| 50% (mediana)  | 55.869.560       | 1596.00        | 4.00           | 
+| 75%            | 78.131.060       | 2593.00        | 6.00           | 
+| max            | 99.996.990       | 10,480.00      | 24.00          | 
+| std (desvio)   | 25.669.810       | 1398.89        | 3.15           | 
 
 ### 3. Formulação das Hipóteses
 
@@ -58,10 +73,14 @@ Não rejeitar H₀ **não significa que H₀ é verdadeira** — apenas que, com
 - Teste de homogeneidade de variâncias (Levene)
 - Teste t bilateral para duas amostras independentes
 
+  ![code3](printcode/code1.png)
+
 ## Resultados
 
-- **p-valor**: Acima de 0.05 (não significativo)
+- **p-valor**: O valor encontrado de p-valor: 0.7191302924096752. Acima de 0.05 (não significativo)
 - **Conclusão**: Falha em rejeitar H₀ — não há evidências estatísticas de que o checkout automático aumente o GMV.
+
+  ![final](printcode/code2.jpeg)
 
 ## Limitações
 
