@@ -1,20 +1,20 @@
-# 🧪 A/B Teste: Checkout Automático vs Manual  
+# A/B Teste: Checkout Automático vs Manual  
 **Empresa fictícia: Eletronic House**
 
 Este projeto simula a análise de um experimento A/B realizado para avaliar o impacto de um novo sistema de **preenchimento automático dos dados de cartão de crédito** no comportamento de compra dos usuários, com foco na métrica de **GMV (Gross Merchandise Volume)**.
 
-## 🎯 Objetivo
+## Objetivo
 
 Investigar se a implementação de um preenchimento automático dos dados de cartão no checkout aumenta significativamente a receita média por usuário (GMV), em comparação ao modelo tradicional de preenchimento manual.
 
-## 📊 Descrição do Experimento
+## Descrição do Experimento
 
 - **Grupo A (Tratamento)**: Página de checkout com preenchimento automático dos dados do cartão.
 - **Grupo B (Controle)**: Página de checkout com preenchimento manual dos dados do cartão.
 - **Duração**: Período X (não especificado).
 - **Localidade**: Apenas usuários do Brasil foram analisados neste projeto.
 
-## 🔍 Metodologia
+## Metodologia
 
 ### 1. Preparação dos Dados
 - Leitura do dataset em `.csv`.
@@ -33,10 +33,10 @@ Investigar se a implementação de um preenchimento automático dos dados de car
 - **H₀ (Hipótese Nula)**: O GMV médio do grupo A é igual ao GMV médio do grupo B.
 - **H₁ (Hipótese Alternativa)**: O GMV médio dos grupos é diferente.
 
-#### Por que usamos H₀ e não H₁ como ponto de partida?
+#### Por que usar H₀ e não H₁ como ponto de partida?
 
-Por padrão, assumimos que **não existe efeito/diferença** até que tenhamos evidências estatísticas para provar o contrário.  
-Rejeitamos H₀ apenas quando há forte evidência de que H₁ é verdadeira.
+Por padrão, assumi que **não existe efeito/diferença** até que existam evidências estatísticas para provar o contrário.  
+Rejeito H₀ apenas quando há forte evidência de que H₁ é verdadeira.
 
 #### O que significa **não rejeitar H₀**?
 
@@ -58,17 +58,17 @@ Não rejeitar H₀ **não significa que H₀ é verdadeira** — apenas que, com
 - Teste de homogeneidade de variâncias (Levene)
 - Teste t bilateral para duas amostras independentes
 
-## 📈 Resultados
+## Resultados
 
 - **p-valor**: Acima de 0.05 (não significativo)
 - **Conclusão**: Falha em rejeitar H₀ — não há evidências estatísticas de que o checkout automático aumente o GMV.
 
-## ⚠️ Limitações
+## Limitações
 
 - Apenas usuários do Brasil foram analisados.
 - GMV é apenas uma das métricas possíveis (não considera taxa de conversão, abandono, etc).
 
-## 🧰 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 | Ferramenta     | Finalidade                           |
 |----------------|--------------------------------------|
@@ -80,27 +80,7 @@ Não rejeitar H₀ **não significa que H₀ é verdadeira** — apenas que, com
 | SciPy          | Testes estatísticos (t, Shapiro, Levene) |
 | Pingouin       | Estatísticas adicionais              |
 
-## 🗂️ Estrutura do Projeto
+## Autor
 
-```
-ab_test_checkout/
-│
-├── data/
-│   └── ab_testing.csv
-│
-├── ab_test_checkout_analysis.py
-│
-└── README.md
-```
-
-## 📎 Como Executar
-
-```bash
-pip install -r requirements.txt
-python ab_test_checkout_analysis.py
-```
-
-## 👨‍🔬 Autor
-
-Este projeto foi desenvolvido por [Seu Nome] com foco em experimentação e inferência estatística.  
-[🔗 LinkedIn](https://www.linkedin.com/in/seuperfil) • [📧 Email](mailto:seuemail@exemplo.com)
+Este projeto foi desenvolvido por Raphael Pimentel com foco em experimentação e inferência estatística.  
+[🔗 LinkedIn](https://www.linkedin.com/in/raphaelcmpimentel/)
